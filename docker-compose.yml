@@ -4,11 +4,11 @@ services:
   db:
     image: mysql:5.7
     environment:
-      MYSQL_USER: virtualUser
-      MYSQL_PASSWORD: virtualPass
-      MYSQL_DATABASE: virtual_assistanst
+      MYSQL_USER: dbUser
+      MYSQL_PASSWORD: dbPass
+      MYSQL_DATABASE: mysqlDatabase
       MYSQL_ROOT: Mysql_root
-      MYSQL_ROOT_PASSWORD: VirtualPass
+      MYSQL_ROOT_PASSWORD: rootPass
     restart:
       unless-stopped
     volumes:
